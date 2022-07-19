@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  todotests:
+    image: todotests
+    depends on:
+      - front-end
+      - back-end
+    environment:
+      - FRONT_HOST=[frontend]
+    
+    
